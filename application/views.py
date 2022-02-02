@@ -30,6 +30,6 @@ def response204_exc_no_custom(request):
 
 def response204_exc2(request):
     try:
-        process_request()
+        process_request_2()
     except CustomException as exc:
         return exc.response()
