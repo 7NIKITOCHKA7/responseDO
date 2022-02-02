@@ -19,3 +19,17 @@ def response204_exc(request):
         process_request()
     except CustomException as exc:
         return exc.response()
+
+
+def response204_exc_no_custom(request):
+    try:
+        process_request()
+    except CustomException as exc:
+        return HttpResponse(status=204)
+
+
+def response204_exc2(request):
+    try:
+        process_request()
+    except CustomException as exc:
+        return exc.response()
