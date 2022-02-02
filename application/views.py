@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from application.external import process_request, CustomException
+from application.external import process_request, process_request_2, CustomException
 
 
 def response204(request):
